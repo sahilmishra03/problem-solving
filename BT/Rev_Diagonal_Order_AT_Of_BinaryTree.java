@@ -39,13 +39,14 @@ public class Rev_Diagonal_Order_AT_Of_BinaryTree {
 
                 while (n != null) {
 
-                    if (n.left != null) {
-                        q.add(n.left);
+                    if (n.right != null) {
+                        q.add(n.right);
                     }
-                    System.out.println(n.data);
-                    n = n.right;
+                    System.out.print(n.data+" ");
+                    n = n.left;
                 }
             }
+            System.out.println();
         }
     }
 }
