@@ -1,6 +1,4 @@
-import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 class Solution {
     public class Pair {
@@ -23,13 +21,13 @@ class Solution {
             }
         }
 
-        PriorityQueue<Pair> q = new PriorityQueue<>((a,b)->a.efforts-b.efforts);
+        PriorityQueue<Pair> q = new PriorityQueue<>((a, b) -> a.efforts - b.efforts);
         q.add(new Pair(0, 0, 0));
         res[0][0] = 0;
 
         while (!q.isEmpty()) {
             Pair front = q.remove();
-            if (res[front.i][front.j]<front.efforts) {
+            if (res[front.i][front.j] < front.efforts) {
                 continue;
             }
             // Up
@@ -70,6 +68,6 @@ class Solution {
             }
         }
 
-        return res[n-1][m-1];
+        return res[n - 1][m - 1];
     }
 }
