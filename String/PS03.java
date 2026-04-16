@@ -1,5 +1,4 @@
 package String;
-
 public class PS03 {
     public static void main(String[] args) {
         String s = "aaabbbccc";
