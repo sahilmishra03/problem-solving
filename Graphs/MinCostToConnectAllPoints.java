@@ -18,7 +18,7 @@ class Solution {
         int sum = 0;
         while (!pq.isEmpty()) {
             Triplet front = pq.poll();
-            int node = front.node, parent = front.parent, wt = front.wt;
+            int node = front.node, parent = front.parent;
             if (vis[node] == true) {
                 continue;
             }
