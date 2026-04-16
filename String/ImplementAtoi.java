@@ -1,6 +1,5 @@
 class Solution {
     public int myAtoi(String s) {
-        String newString = s.trim();
         boolean isPos = true;
         long finalValue = 0;
         for (int i = 0; i < s.length(); i = i + 1) {
