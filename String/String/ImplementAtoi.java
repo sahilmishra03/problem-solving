@@ -1,3 +1,4 @@
+package String;
 class Solution {
     public int myAtoi(String s) {
         boolean isPos = true;
