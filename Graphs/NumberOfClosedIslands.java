@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class NumberOfClosedIslands {
     public int closedIsland(int[][] grid) {
         int[][] temp = grid;
         int n = grid.length;

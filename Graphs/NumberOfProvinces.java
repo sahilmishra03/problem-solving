@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class NumberOfProvinces {
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
         boolean[] visisted = new boolean[n];

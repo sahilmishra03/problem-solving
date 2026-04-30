@@ -1,6 +1,6 @@
-//Count digits via log
-
 package Math;
+
+//Count digits via log
 
 public class Concept07 {
     public static void main(String[] args) {

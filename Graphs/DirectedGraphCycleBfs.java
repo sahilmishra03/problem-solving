@@ -1,8 +1,10 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class DirectedGraphCycleBfs {
     ArrayList<Integer> res;
 
     public boolean isCyclic(int V, int[][] edges) {

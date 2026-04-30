@@ -1,3 +1,5 @@
+package Array;
+
 class Solution1 {
     public int mySqrt(int x) {
         int left = 1;

@@ -1,6 +1,8 @@
+package Graphs;
+
 import java.util.*;
 
-class Solution {
+class CourseScheduleIIRev {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         int n = numCourses;
         ArrayList<Integer> res = new ArrayList<>();

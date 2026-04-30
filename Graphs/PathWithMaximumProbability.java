@@ -1,8 +1,10 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class PathWithMaximumProbability {
     public class Pair {
         int node;
         double prob;

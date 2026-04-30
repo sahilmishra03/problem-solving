@@ -1,8 +1,10 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class Undirected_Graph_Cycle_Rev {
     public class Pair {
         int num, parent;
 

@@ -1,4 +1,6 @@
-class Solution {
+package Graphs;
+
+class Find_the_City_With_the_Smallest_Number_of_Neighbors_at_a_Threshold_Distance {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
         int[][] adjMatrix = new int[n][n];
 

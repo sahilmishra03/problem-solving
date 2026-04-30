@@ -1,25 +1,14 @@
 package BT;
 public class Video32_38 {
-    public static class Node {
-        char data;
-        Node left;
-        Node right;
-
-        public Node(char data) {
-            this.data = data;
-            this.left = null;
-            this.right = null;
-        }
-    }
 
     public static void main(String[] args) {
-        Node root = new Node('a');
-        root.left = new Node('b');
-        root.right = new Node('c');
-        root.left.left = new Node('d');
-        root.left.right = new Node('e');
-        root.right.left = new Node('f');
-        root.right.right = new Node('g');
+        CharNode root = new CharNode('a');
+        root.left = new CharNode('b');
+        root.right = new CharNode('c');
+        root.left.left = new CharNode('d');
+        root.left.right = new CharNode('e');
+        root.right.left = new CharNode('f');
+        root.right.right = new CharNode('g');
 
         inOrder(root);
 
@@ -36,13 +25,13 @@ public class Video32_38 {
         inOrder(root);
     }
 
-    public static Node leftClonedTreeBackHelper(Node root) {
+    public static CharNode leftClonedTreeBackHelper(CharNode root) {
         if (root == null) {
             return null;
         }
 
-        Node lnr = leftClonedTreeBackHelper(root.left.left);
-        Node rnr = leftClonedTreeBackHelper(root.right);
+        CharNode lnr = leftClonedTreeBackHelper(root.left.left);
+        CharNode rnr = leftClonedTreeBackHelper(root.right);
 
         root.left = lnr;
         root.right = rnr;
@@ -50,15 +39,15 @@ public class Video32_38 {
         return root;
     }
 
-    public static Node leftClonedTreeHelper(Node root) {
+    public static CharNode leftClonedTreeHelper(CharNode root) {
         if (root == null) {
             return null;
         }
 
-        Node lnr = leftClonedTreeHelper(root.left);
-        Node rnr = leftClonedTreeHelper(root.right);
+        CharNode lnr = leftClonedTreeHelper(root.left);
+        CharNode rnr = leftClonedTreeHelper(root.right);
 
-        Node nn = new Node(root.data);
+        CharNode nn = new CharNode(root.data);
         nn.left = lnr;
         root.left = nn;
         root.right = rnr;
@@ -66,7 +55,7 @@ public class Video32_38 {
         return root;
     }
 
-    public static void inOrder(Node root) {
+    public static void inOrder(CharNode root) {
         if (root == null) {
             return;
         }

@@ -1,6 +1,7 @@
+package Math;
+
 // Count the Digits That Divide a Number
 
-package Math;
 
 public class Concept06 {
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
+package Graphs;
+
 import java.util.PriorityQueue;
 
-class Solution {
+class MinCostToConnectAllPoints {
     class Triplet {
         int node, parent, wt;
 

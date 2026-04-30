@@ -2,18 +2,6 @@ package BT;
 
 import java.util.*;
 
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 public class Rev_Diagonal_Order_AT_Of_BinaryTree {
     public static void main(String[] args) {
         Node root = new Node(10);

@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class FloodFill {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         
         bfs(image, sr, sc, color);

@@ -1,6 +1,6 @@
-//Count Digits
-
 package Math;
+
+//Count Digits
 
 public class Concept05 {
     public static void main(String[] args) {

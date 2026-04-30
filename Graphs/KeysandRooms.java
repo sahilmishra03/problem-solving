@@ -1,8 +1,10 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class Solution {
+class KeysandRooms {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         Queue<Integer> q = new LinkedList<>();
         boolean[] vis = new boolean[rooms.size()];

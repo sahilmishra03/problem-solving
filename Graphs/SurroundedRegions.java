@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class SurroundedRegions {
     public void solve(char[][] board) {
         char[][] temp = board;
         int n = board.length;

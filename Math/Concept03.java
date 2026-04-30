@@ -1,6 +1,7 @@
+package Math;
+
 //Reverse Integer
 
-package Math;
 
 public class Concept03 {
     public static void main(String[] args) {

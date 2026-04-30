@@ -5,43 +5,31 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Node {
-    char data;
-    Node left;
-    Node right;
-
-    Node(char data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 public class Burning_Tree_2 {
-    static ArrayList<Node> path;
+    static ArrayList<CharNode> path;
     static ArrayList<ArrayList<Character>> res;
     static HashMap<Integer, ArrayList<Character>> map;
     static int min;
     static int max;
 
     public static void main(String[] args) {
-        Node root = new Node('a');
-        root.left = new Node('b');
-        root.right = new Node('c');
-        root.left.left = new Node('d');
-        root.left.right = new Node('e');
-        root.right.left = new Node('f');
-        root.right.right = new Node('g');
-        root.right.left.left = new Node('h');
-        root.right.left.right = new Node('i');
-        root.right.left.right.left = new Node('j');
-        root.right.left.right.right = new Node('k');
-        root.right.left.right.left.left = new Node('n');
-        root.right.left.right.left.right = new Node('o');
-        root.right.left.right.right.left = new Node('l');
-        root.right.left.right.right.right = new Node('m');
-        root.right.left.right.right.left.left = new Node('1');
-        root.right.left.right.right.left.right = new Node('2');
+        CharNode root = new CharNode('a');
+        root.left = new CharNode('b');
+        root.right = new CharNode('c');
+        root.left.left = new CharNode('d');
+        root.left.right = new CharNode('e');
+        root.right.left = new CharNode('f');
+        root.right.right = new CharNode('g');
+        root.right.left.left = new CharNode('h');
+        root.right.left.right = new CharNode('i');
+        root.right.left.right.left = new CharNode('j');
+        root.right.left.right.right = new CharNode('k');
+        root.right.left.right.left.left = new CharNode('n');
+        root.right.left.right.left.right = new CharNode('o');
+        root.right.left.right.right.left = new CharNode('l');
+        root.right.left.right.right.right = new CharNode('m');
+        root.right.left.right.right.left.left = new CharNode('1');
+        root.right.left.right.right.left.right = new CharNode('2');
 
         path = new ArrayList<>();
         res = new ArrayList<>();
@@ -50,7 +38,7 @@ public class Burning_Tree_2 {
         max = Integer.MIN_VALUE;
         nodeToRootPath(root, 'i');
         for (int i = 0; i < path.size(); i = i + 1) {
-            Node blocker = null;
+            CharNode blocker = null;
             if (i > 0) {
                 blocker = path.get(i - 1);
             }
@@ -64,19 +52,19 @@ public class Burning_Tree_2 {
         System.out.println(res);
     }
 
-    private static void levelOrderTraversal(Node root, int time, Node blocker) {
+    private static void levelOrderTraversal(CharNode root, int time, CharNode blocker) {
         int currTime = time;
         if (root == null || root == blocker) {
             return;
         }
 
-        Queue<Node> q = new LinkedList<>();
+        Queue<CharNode> q = new LinkedList<>();
         q.add(root);
 
         while (!q.isEmpty()) {
             int size = q.size();
             for (int i = 0; i < size; i = i + 1) {
-                Node n = q.remove();
+                CharNode n = q.remove();
                 if (n == blocker) {
                     continue;
                 }
@@ -103,7 +91,7 @@ public class Burning_Tree_2 {
         }
     }
 
-    public static boolean nodeToRootPath(Node root, char target) {
+    public static boolean nodeToRootPath(CharNode root, char target) {
         if (root == null) {
             return false;
         }

@@ -1,16 +1,5 @@
 package BT;
 public class Video42 {
-    public static class Node {
-        int data;
-        Node left;
-        Node right;
-
-        public Node(int data) {
-            this.data = data;
-            this.left = null;
-            this.right = null;
-        }
-    }
 
     public static void removeLeafNode(Node root) {
         if (root == null) {

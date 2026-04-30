@@ -1,6 +1,8 @@
+package Graphs;
+
 import java.util.*;
 
-class Solution {
+class CourseScheduleIV {
     public List<Boolean> checkIfPrerequisite(int numCourses, int[][] prerequisites, int[][] queries) {
         List<Boolean> res = new ArrayList<>();
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();

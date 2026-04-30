@@ -1,6 +1,8 @@
+package Graphs;
+
 // User function template for JAVA
 
-class Solution {
+class Floyd_Warshall {
     public void floydWarshall(int[][] adjMatrix) {
         int n = adjMatrix.length;
         // Code here

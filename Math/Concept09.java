@@ -1,6 +1,7 @@
+package Math;
+
 //Check Prime Number
 
-package Math;
 
 public class Concept09 {
     public static void main(String[] args) {

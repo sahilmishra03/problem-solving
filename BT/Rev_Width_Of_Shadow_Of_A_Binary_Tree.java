@@ -1,17 +1,5 @@
 package BT;
 
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
-
 public class Rev_Width_Of_Shadow_Of_A_Binary_Tree {
 
     static int min;

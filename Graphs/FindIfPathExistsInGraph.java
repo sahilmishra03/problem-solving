@@ -1,8 +1,10 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class FindIfPathExistsInGraph {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         boolean[] vis = new boolean[n];

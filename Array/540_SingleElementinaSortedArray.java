@@ -1,3 +1,5 @@
+package Array;
+
 class Solution {
     public int singleNonDuplicate(int[] nums) {
         int left = 0;

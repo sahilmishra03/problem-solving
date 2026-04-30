@@ -1,8 +1,10 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class DirectedGraphCycle {
     public boolean isCyclic(int V, int[][] edges) {
         // code here
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();

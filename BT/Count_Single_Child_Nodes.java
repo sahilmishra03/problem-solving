@@ -1,15 +1,4 @@
 package BT;
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
 
 public class Count_Single_Child_Nodes {
     public static void main(String[] args) {

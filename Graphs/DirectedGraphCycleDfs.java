@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Solution {
+class DirectedGraphCycleDfs {
     ArrayList<Integer> res;
 
     public boolean isCyclic(int V, int[][] edges) {

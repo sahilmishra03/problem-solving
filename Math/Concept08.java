@@ -1,6 +1,7 @@
+package Math;
+
 //Divisor
 
-package Math;
 
 import java.util.ArrayList;
 

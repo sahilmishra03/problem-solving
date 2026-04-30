@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class NumberOfEnclaves {
     public class Pair {
         int i, j;
 

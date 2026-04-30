@@ -1,10 +1,12 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class Solution {
+class FindEventualSafeStates {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         ArrayList<Integer> res = new ArrayList<>();

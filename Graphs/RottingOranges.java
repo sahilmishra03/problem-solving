@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class RottingOranges {
     public class Triplet {
         int i, j, time;
 

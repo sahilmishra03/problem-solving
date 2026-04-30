@@ -1,6 +1,8 @@
+package Graphs;
+
 // User function Template for Java
 
-class Solution {
+class Bellman_Ford_Algo {
     public int[] bellmanFord(int V, int[][] edges, int src) {
         // code here
         int[] res = new int[V];

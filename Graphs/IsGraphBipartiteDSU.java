@@ -1,4 +1,6 @@
-class Solution {
+package Graphs;
+
+class IsGraphBipartiteDSU {
     int parent[];
     int size[];
     boolean parity[];

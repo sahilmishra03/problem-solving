@@ -1,6 +1,8 @@
+package Graphs;
+
 import java.util.*;
 
-class Solution {
+class TopologicalSortBfs {
     ArrayList<Integer> res;
 
     public ArrayList<Integer> topoSort(int V, int[][] edges) {

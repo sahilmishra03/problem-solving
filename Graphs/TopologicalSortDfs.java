@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Solution {
+class TopologicalSortDfs {
     ArrayList<Integer> res;
 
     public ArrayList<Integer> topoSort(int V, int[][] edges) {

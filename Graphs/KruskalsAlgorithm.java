@@ -1,6 +1,8 @@
+package Graphs;
+
 import java.util.PriorityQueue;
 
-class Solution {
+class KruskalsAlgorithm {
     public class Edge {
         int u, v, wt;
 

@@ -1,7 +1,4 @@
-//How to find power of the number
-
 package Math;
-
 public class Concept04 {
     public static void main(String[] args) {
         System.out.println(pow(2, 4));

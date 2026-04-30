@@ -1,4 +1,6 @@
-class Solution {
+package Graphs;
+
+class DSU {
     int parent[];
     int size[];
     public int findCircleNum(int[][] isConnected) {

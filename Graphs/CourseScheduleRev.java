@@ -1,9 +1,11 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class Solution {
+class CourseScheduleRev {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         List<Integer> res = new ArrayList<>();
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();

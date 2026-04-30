@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution1 {
+class IsGraphBipartite {
     public boolean isBipartite(int[][] graph) {
         int vis[] = new int[graph.length];
         for (int i = 0; i < vis.length; i++) {

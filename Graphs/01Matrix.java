@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class _01Matrix {
     public class Triplet {
         int i, j, dis;
 

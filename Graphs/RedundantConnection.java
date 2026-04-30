@@ -1,4 +1,6 @@
-class Solution {
+package Graphs;
+
+class RedundantConnection {
     int parent[];
     int size[];
 

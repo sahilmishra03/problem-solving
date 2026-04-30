@@ -1,6 +1,7 @@
+package Math;
+
 // Binary to Decimal Conversion
 
-package Math;
 
 public class Concept02 {
     public static void main(String[] args) {

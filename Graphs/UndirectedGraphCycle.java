@@ -1,8 +1,10 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution1 {
+class UndirectedGraphCycleBfs {
     public boolean isCycle(int V, int[][] edges) {
         // Code here
         boolean[] vis = new boolean[V];
@@ -57,7 +59,7 @@ class Solution1 {
     }
 }
 
-class Solution {
+class UndirectedGraphCycleDfs {
     public boolean isCycle(int V, int[][] edges) {
         // Code here
         boolean[] vis = new boolean[V];

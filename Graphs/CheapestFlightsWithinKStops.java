@@ -1,7 +1,9 @@
+package Graphs;
+
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
-class Solution {
+class CheapestFlightsWithinKStops {
     class Triplet {
         int node, cost, stops;
 

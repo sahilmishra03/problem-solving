@@ -1,6 +1,8 @@
+package Graphs;
+
 import java.util.PriorityQueue;
 
-class Solution {
+class PathWithMinimumEffort {
     class Triplet {
         int i, j, efforts;
 
