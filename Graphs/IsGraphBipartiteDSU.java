@@ -1,4 +1,3 @@
-package Graphs;
 
 class IsGraphBipartiteDSU {
     int parent[];

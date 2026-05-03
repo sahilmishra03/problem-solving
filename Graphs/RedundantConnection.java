@@ -1,4 +1,3 @@
-package Graphs;
 
 class RedundantConnection {
     int parent[];

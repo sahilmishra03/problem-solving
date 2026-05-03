@@ -1,4 +1,3 @@
-package Graphs;
 
 // User function template for JAVA
 

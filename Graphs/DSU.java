@@ -1,4 +1,3 @@
-package Graphs;
 
 class DSU {
     int parent[];

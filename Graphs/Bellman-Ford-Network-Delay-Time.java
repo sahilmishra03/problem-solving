@@ -1,4 +1,3 @@
-package Graphs;
 
 class BellmanFordNetworkDelayTime {
     public int findDelayTime(int V, int[][] edges, int src) {
