@@ -2,12 +2,12 @@ import java.util.PriorityQueue;
 
 class Solution {
     class Triplet {
-        int i, j, cost;
+        int i, j, c;
 
-        Triplet(int i, int j, int cost) {
+        Triplet(int i, int j, int c) {
             this.i = i;
             this.j = j;
-            this.cost = cost;
+            this.c = c;
         }
     }
 
@@ -23,7 +23,7 @@ class Solution {
             }
         }
 
-        PriorityQueue<Triplet> q = new PriorityQueue<>((a, b) -> a.cost - b.cost);
+        PriorityQueue<Triplet> q = new PriorityQueue<>((a, b) -> a.c - b.c);
         if (grid[0][0] == 0) {
             q.add(new Triplet(0, 0, 1));
             res[0][0] = 1;
@@ -33,7 +33,7 @@ class Solution {
             Triplet front = q.remove();
             int row = front.i;
             int col = front.j;
-            int cost = front.cost;
+            int cost = front.c;
             if (cost > res[row][col])
                 continue;
 
