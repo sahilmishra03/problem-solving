@@ -8,7 +8,8 @@ class Bellman_Ford_Algo {
         for (int i = 0; i < res.length; i++) {
             res[i] = 100000000;
         }
-
+        res[src]=0;
+        
         for (int i = 0; i < V - 1; i++) {
             for (int j = 0; j < edges.length; j++) {
                 int u = edges[j][0];
@@ -20,7 +21,7 @@ class Bellman_Ford_Algo {
                 }
             }
         }
-        res[src]=0;
+
         for (int j = 0; j < edges.length; j++) {
             int u = edges[j][0];
             int v = edges[j][1];
